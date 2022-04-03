@@ -34,14 +34,14 @@
       id="borrowed"
       value="borrowed"
     />
-    <label for="brought">Brought</label>
+    <label for="bought ">Bought </label>
     <input
       v-model="bookData.ownership"
       type="radio"
-      id="brought"
-      value="brought"
+      id="bought "
+      value="bought "
     />
-    <button type="submit" name="button" @submit.prevent="bookSubmit()">Add Book</button>
+    <button type="submit" name="button" v-on:submit.prevent="bookSubmit()">Add Book</button>
   </form>
 </template>
 
