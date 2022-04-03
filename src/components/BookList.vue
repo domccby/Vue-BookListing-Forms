@@ -7,10 +7,7 @@
     <hr />
     <h2>Filtered Books By Ownership</h2>
     <select v-model="holding" name="holding" id="holding">
-      <option disabled selected="selected">Please choose an option</option>
-      <option v-for="filter in filters" :key="filter" :value="filter">
-        {{ filter }}
-      </option>
+      <option v-for="filter in filters" :key="filter">{{ filter }}</option>
     </select>
     <ul>
       <book-item v-for="book in filteredBooks" :key="book.id" :book="book"></book-item>
