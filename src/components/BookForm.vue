@@ -1,6 +1,6 @@
 <template>
   <form
-    v-on:submit.prevent="bookSubmit(bookTitle, bookAuthor)"
+    v-on:submit.prevent="bookSubmit(bookData)"
     class=""
     action="#"
     method="post"
@@ -41,7 +41,7 @@
       id="bought "
       value="bought "
     />
-    <button type="submit" name="button" v-on:submit.prevent="bookSubmit(bookData)">Add Book</button>
+    <button type="submit" name="button">Add Book</button>
   </form>
 </template>
 
